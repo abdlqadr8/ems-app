@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #252525;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    left: 240px;
+    width: calc(100% - 240px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sidebar .navbar-brand {
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sidebar .navbar-brand i {
+    padding-right: 10px;
+    font-size: 30px;
+
+}
+
+.sidebar .navbar-menu ul {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 2px;
+}
+
+.sidebar ul li {
+    padding: 15px 5px;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px;
+    transition: all 0.4s ease;
+}
+
+.sidebar ul li a:hover{
+    background-color: #ffffff;
+    color: #252525;
+}
+
+.sidebar ul li a .active {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.sidebar ul li a i {
+    height: 25px;
+    min-width: 50px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.topbar ul {
+    background-color: #ffffff;
+    box-shadow: 0 0 0.375rem 0.25rem rgb(161 172 184 / 15%);
+}
+
+.topbar ul li a {
+    width: 100%;
+    border-radius: 6px;
+    color: #252525;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+
+.topbar ul li a:hover {
+    color: #ffffff;
+    background-color: #252525;
+}
+
+.row > *{
+    padding: 2px;
+    margin-right: 10px;
+    
+}
+
+.img-thumbnail{
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
